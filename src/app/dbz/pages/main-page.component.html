@@ -1,0 +1,14 @@
+<h1>Main Page personajes</h1>
+
+<div class="row">
+
+  <div class="col">
+    <app-dbz-list (onDelete)="onDeleteCharacter( $event )" [listCharacters]="characters"></app-dbz-list>
+  </div>
+
+
+    <div class="col">
+     <app-add-character (onNewCharacter)="onNewCharacter( $event )"></app-add-character>
+    </div>
+
+</div>
